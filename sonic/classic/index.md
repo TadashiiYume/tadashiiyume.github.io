@@ -1,5 +1,7 @@
 # Classic Sonic Collection
 
+###### [Click here to go back](https://tadashiiyume.github.io/sonic)
+
 [![sonic_the_hedgehog](../../assets/classic/sonic.png)](https://tadashiiyume.github.io/sonic/classic/sonic)
 
 [![sonic_cd](../../assets/classic/cd.png)](https://tadashiiyume.github.io/sonic/classic/cd)
