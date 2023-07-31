@@ -1,10 +1,10 @@
 # Hey Y'all! 
-###### Requested by @miqumi
+###### Requested by [@miqumi](https://github.com/miqumi)
 
 I see yall having problems with mc, here's a guide
 
 **Step 1: Backup MC**
-	
+
 	Its EZ! Just click the below 📄 icon to grab the latest
 	version of the BackupMC tool by @miqumi!
 
