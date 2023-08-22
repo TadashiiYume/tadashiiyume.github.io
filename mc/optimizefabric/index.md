@@ -1,5 +1,5 @@
   # OPTIMIZE MC USING FABRIC
-###### Written by Eimi
+###### Article written by [@eimi on discord](https://discord.id/?prefill=983667490850734080)
 
 Fabric is a mod-loader for Minecraft: Java Edition  
 Follow this guide to use optimization mods for MCJAVA  
