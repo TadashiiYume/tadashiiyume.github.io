@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const inputGB = parseInt(gbField.value);
         
         if (!isNaN(inputGB)) {
-            const resultKB = inputGB * 1024;
-            resultDiv.textContent = `${inputGB} GB is equal to ${resultKB} KB.`;
+            const resultMB = inputGB * 1024;
+            resultDiv.textContent = `${inputGB} GB = ${resultKB} MB.`;
         } else {
             resultDiv.textContent = "Please enter a valid integer.";
         }
