@@ -1,0 +1,28 @@
+name: Generate Sitemap and Create Pull Request
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate-sitemap:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v2
+
+      - name: Generate Sitemap
+        id: sitemap
+        uses: cicirello/generate-sitemap@v1
+        with:
+          base-url-path: https://tadashiiyume.github.io/
+          include-html: true 
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          title: "Automated sitemap update"
+          body: "Sitemap updated by the cicirello/generate-sitemap@v1 GitHub Action."
+          branch: update-sitemap
