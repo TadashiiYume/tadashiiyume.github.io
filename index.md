@@ -3,9 +3,9 @@
 
 ###### [Click 'ere to obtain the wrapper tool!](https://tadashiiyume.github.io/tool)
 
-[![sonic_games](assets/sonic_flicker.png)](https://tadashiiyume.github.io/sonic)
+[comment]: [![sonic_games](assets/sonic_flicker.png)](https://tadashiiyume.github.io/sonic)
 
-![mario_games](https://tadashiiyume.github.io/mario)
+[comment]: ![mario_games](https://tadashiiyume.github.io/mario)
 
 
 
