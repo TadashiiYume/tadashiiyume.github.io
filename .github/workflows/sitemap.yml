@@ -1,28 +1,28 @@
-name: Generate Sitemap and Create Pull Request
+name: Generate xml sitemap
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
-  generate-sitemap:
+  sitemap_job:
     runs-on: ubuntu-latest
+    name: Generate a sitemap
 
     steps:
-      - name: Checkout the repository
-        uses: actions/checkout@v2
+    - name: Checkout the repo
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0 
 
-      - name: Generate Sitemap
-        id: sitemap
-        uses: cicirello/generate-sitemap@v1
-        with:
-          base-url-path: https://tadashiiyume.github.io/
-          include-html: true 
+    - name: Generate the sitemap
+      id: sitemap
+      uses: cicirello/generate-sitemap@v1
+      with:
+        base-url-path: https://THE.URL.TO.YOUR.PAGE/
 
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
-        with:
-          title: "Automated sitemap update"
-          body: "Sitemap updated by the cicirello/generate-sitemap@v1 GitHub Action."
-          branch: update-sitemap
+    - name: Output stats
+      run: |
+        echo "sitemap-path = ${{ steps.sitemap.outputs.sitemap-path }}"
+        echo "url-count = ${{ steps.sitemap.outputs.url-count }}"
+        echo "excluded-count = ${{ steps.sitemap.outputs.excluded-count }}"
